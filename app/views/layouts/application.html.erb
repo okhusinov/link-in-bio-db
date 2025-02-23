@@ -1,13 +1,95 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Link-in-bio</title>
+    <title>Otabek Khusinov's Links </title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <style>
+      /*
+      * {
+        border: thin blue solid;
+      }
+      */
+      html {
+        min-height: 100%;
+      }
+      body {
+        min-height: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: linear-gradient(270deg, #e4f6f8, #e2f7f9, #e0f9fa, #defafc, #dcfbfd, #d9fcfd, #d7fefe, #d5ffff);
+        color: rgba(20, 73, 212, 1.0);
+        font-family: 'Cabin', sans-serif;
+      }
+      a {
+        color: rgba(20, 73, 212, 1.0);
+        text-decoration: none;
+      }
+    
+    .avatar-image {
+      width: 256px;
+      height: 256px;
+      object-fit: cover;
+      border-radius: 256px;
+    }
+    
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+      border-radius: 48px;
+    }
+
+    .main-container {
+      max-width: 640px;
+      margin: auto;
+    }
+
+    .item {
+      background-color: rgba(231, 249, 240, 0.8);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      border-radius: 1000px;
+      padding: 5px;
+      padding-right: 53px;
+      box-shadow: 4px 4px 10px 0px rgba(20, 73, 212, 0.7);
+    }
+
+    .name-row {
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 600;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .image-row {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .social-icons-row {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-around;
+      font-size: 36px;
+    }
+
+    .link-text {
+      text-align: center;
+      flex-grow: 1;
+    }
+    
+    </style>
+
   </head>
 
   <body>

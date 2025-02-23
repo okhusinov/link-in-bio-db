@@ -1,9 +1,63 @@
-<h1>Hello World!</h1>
+<div class="main-container">
 
-<% Item.all.each do |the_item| %>
-  <div>
-    <a href="<%= the_item.link_url %>">
-      <%= the_item.link_description %>
-    </a>
+  <div class="image-row">
+
+    <img class="avatar-image" src="/otabekkhusinov.jpg" alt="profile pic">
+
   </div>
-<% end %>
+
+  <div class="name-row">
+
+    Otabek Khusinov
+
+  </div>
+
+  <div class="social-icons-row">
+
+    <a href="https://github.com/okhusinov" target="_blank">
+
+      <i class="fa-brands fa-github"></i>
+
+    </a>
+
+    <a href="https://www.linkedin.com/in/okhusinov/" target="_blank">
+
+      <i class="fa-brands fa-linkedin"></i>
+
+    </a>
+
+    <a href="https://www.instagram.com/o.khusinov/" target="_blank">
+
+      <i class="fa-brands fa-instagram"></i>
+
+    </a>
+
+    <a href="https://twitter.com/otabekkhusinov" target="_blank">
+
+      <i class="fa-brands fa-x-twitter"></i>
+
+    </a>
+
+  </div>
+
+  <div class="links-row">
+
+    <% @list_of_items.each do |the_item| %>
+
+      <div class="item">
+
+        <img class="thumbnail" src="<%= the_item.thumbnail_url %>" alt="<%= the_item.link_description %>">
+
+        <a class="link-text" href="<%= the_item.link_url %>" target="_blank">
+
+          <%= the_item.link_description %>
+
+        </a>
+
+      </div>
+
+    <% end %>
+  
+  </div>
+
+</div>
