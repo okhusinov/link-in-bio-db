@@ -46,7 +46,11 @@
 
       <div class="item">
 
-        <img class="thumbnail" src="<%= the_item.thumbnail_url %>" alt="<%= the_item.link_description %>">
+        <a href="<%= the_item.link_url %>">
+          
+          <img class="thumbnail" src="<%= the_item.thumbnail_url %>" alt="<%= the_item.link_description %>" href="<%= the_item.link_url %>">
+
+        </a>
 
         <a class="link-text" href="<%= the_item.link_url %>" target="_blank">
 
@@ -59,5 +63,7 @@
     <% end %>
   
   </div>
+
+  <div style="display: flex; font-size: 16px; margin-top: 100px;">I love you, Sevara and Kamol!</div>
 
 </div>
